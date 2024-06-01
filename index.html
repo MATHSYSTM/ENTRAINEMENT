@@ -65,7 +65,7 @@ document.querySelector("#context").setAttribute("src","exo"+etape+".js");
 voix[1].play();snd[1]=1;
 }
 
-if(etape==limite&&deja==0){let nt=document.createElement("div");
+if(etape==limite&&deja==0){ playing();let nt=document.createElement("div");
 nt.setAttribute("id","note");let pr=document.createTextNode(""+note+" "+"/"+" "+limite);nt.append(pr);
 document.querySelector("body").append(nt);}
 });
